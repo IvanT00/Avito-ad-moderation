@@ -1,0 +1,64 @@
+.statusSideFilterTitle {
+  font-weight: 600;
+  font-size: var(--h2-size);
+  user-select: none;
+}
+
+.statusList {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.statusContainer {
+  margin-top: 16px;
+}
+
+.hiddenCheckbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.customCheckbox {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  transition: all 0.2s ease;
+  background-color: var(--filters-color);
+  border: none;
+  border-radius: var(--little-radius);
+}
+.customCheckbox::after {
+  content: url("@/app/assets/icons/checkMark.svg");
+  position: absolute;
+  display: none;
+  left: 50%;
+  top: 33%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+}
+
+.hiddenCheckbox:checked + .customCheckbox::after {
+  display: block;
+}
+
+.listContainer {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.statusLabel {
+  user-select: none;
+}
+
+.statusLabel {
+  user-select: none;
+}
+
+/*# sourceMappingURL=StatusSideFilter.module.css.map */

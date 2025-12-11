@@ -1,0 +1,25 @@
+{
+  "name": "tech-int3-server",
+  "version": "1.0.0",
+  "description": "API сервер для стажерского задания по модерации объявлений",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node_modules/.bin/nodemon server.js"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "moderation",
+    "internship"
+  ],
+  "author": "Internship Task",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

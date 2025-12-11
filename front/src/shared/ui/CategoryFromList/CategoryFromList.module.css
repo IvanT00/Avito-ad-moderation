@@ -1,0 +1,17 @@
+.categoryFromListContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: none;
+  border-radius: var(--little-radius);
+  background-color: var(--filters-color);
+  padding: 8px;
+  font-size: var(--placeholder-size);
+}
+
+.categoryFromListImg {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=CategoryFromList.module.css.map */

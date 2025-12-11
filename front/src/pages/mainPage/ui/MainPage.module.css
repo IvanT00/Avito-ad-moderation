@@ -1,0 +1,62 @@
+.mainTitle {
+  margin: 0;
+}
+
+.mainPageContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.searchFiltersAdsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.filtersAndSearch {
+  display: flex;
+  column-gap: 16px;
+}
+
+.sideCategoriesContainer {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  position: sticky;
+  top: 10px;
+  height: 600px;
+}
+
+.sideFilterButton {
+  margin-top: 16px;
+  background-color: var(--blue-color);
+  color: white;
+  border-radius: var(--middle-radius);
+  padding: 16px;
+  border: 3px solid var(--blue-color);
+}
+
+.filterInfo {
+  margin-top: 16px;
+}
+
+.sideFilterButton:active {
+  color: var(--placeholder-color);
+  transition-duration: 0.2s;
+}
+
+.adsListContainer {
+  margin-top: 32px;
+}
+
+.resetAllFiltersButton {
+  font-size: var(--p-size);
+  color: var(--blue-color);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=MainPage.module.css.map */

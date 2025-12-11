@@ -1,0 +1,14 @@
+.paginationButton{
+  background-color: transparent;
+  border: none;
+  font-size: var(--p-size);
+  color: var(--placeholder-color);
+}
+.paginationButtonActive{
+  font-size: var(--h2-size);
+  color: black;
+}
+.pagintaionButtonContainer{
+  margin-top: 8px;
+  padding-bottom: 32px;
+}

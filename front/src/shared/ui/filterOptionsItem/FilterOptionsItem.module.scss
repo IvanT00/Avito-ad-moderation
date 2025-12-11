@@ -1,0 +1,9 @@
+.filterOptionsItem{
+  border-radius: var(--middle-radius);
+  padding: 10px 10px 10px 16px;
+  cursor: pointer;
+}
+.filterOptionsItem:hover{
+  transition-duration: 0.2s;
+  background-color: var(--filters-color);
+}

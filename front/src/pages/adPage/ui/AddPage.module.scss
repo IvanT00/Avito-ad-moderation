@@ -1,0 +1,326 @@
+.imgDescriptionHistoryContainer{
+  display: flex;
+  justify-content: space-between;
+}
+.descriptionContainer{
+  text-align: start;
+}
+.imgDescriptionContainer{
+  display: flex;
+  text-align: start;
+  column-gap: 32px;
+}
+.descriptionContainer > p{
+  font-size: 32px;
+}
+.adTitle{
+  font-size: 50px;
+  text-align: start;
+  margin: 0;
+}
+.adContainer{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
+  background-color: var(--list-item-hover-color);
+  padding: 32px;
+  border-radius: var(--larger-radius);
+  min-height: 83vh;
+
+}
+.adCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.characteristicContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.characteristic > p{
+  font-size: 32px;
+  text-align: start;
+  font-weight: 600;
+}
+.aboutSeller p{
+  font-size: 32px;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: 600;
+}
+.aboutSeller{
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.spansAboutSeller{
+  display: flex;
+  column-gap: 30px;
+}
+.characteristicTable tbody tr th{
+  text-align: start;
+  padding: 16px 16px 16px 0;
+
+}
+.characteristicTable tbody tr{
+  border-bottom: 1px solid black;
+}
+.characteristicTable tbody tr td{
+  border-left:  1px solid black;
+  padding-left: 16px;
+}
+.characteristicTable tbody tr:last-child{
+  border-bottom: none;
+}
+.characteristicTable tbody tr:last-child{
+  border-bottom: none;
+}
+.redRate{
+  color: var(--red-color);
+}
+.greenRate{
+  color: var(--green-color);
+}
+.sellerName{
+  color: var(--blue-color);
+  cursor: pointer;
+}
+
+.historyOfModeration > p{
+  font-size: 32px;
+  font-weight: 600;
+}
+.moderatedItem{
+  background: var(--filters-color);
+  padding: 16px;
+  width: 100%;
+  border-radius: var(--middle-radius);
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 16px;
+}
+
+.moderatorName{
+  font-size: 16px;
+  color: var(--blue-color);
+  cursor: pointer;
+}
+
+.moderatorTime{
+  font-size: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ea0a6;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+
+.moderatorActionApproved{
+
+  color: var(--green-color);
+}
+.moderatorActionRejected{
+  color: var(--red-color);
+}
+.moderatorActionPending{
+  color: var(--blue-color);
+}
+
+
+.historyOfModerationContainer {
+  padding: 0 32px;
+  max-height: 316px;
+  overflow-y: auto;
+}
+.buttonsContainer{
+  margin-top: 16px;
+  display: flex;
+  column-gap: 16px;
+}
+.buttonsContainer button{
+  border: none;
+  color: var(--background-color);
+  padding: 16px 32px;
+  border-radius: var(--middle-radius);
+}
+.buttonsContainer button:hover{
+  transition-duration: 0.3s;
+  color: var(--filters-color);
+}
+.buttonsContainer button:active{
+  transition-duration: 0.3s;
+  color: var(--placeholder-color);
+}
+.buttonApprove{
+  background-color: var(--green-color);
+}
+.buttonReject{
+  background-color: var(--red-color);
+}
+.buttonFinalize{
+  background-color: var(--blue-color);
+}
+
+
+.arrowsContainer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.arrowLeft{
+  width: 75px;
+  aspect-ratio: 1;
+  transform: rotate(-180deg);
+  background-color: transparent;
+  border: none;
+  display: flex;
+}
+.arrowRight{
+  width: 75px;
+  aspect-ratio: 1;
+  background-color: transparent;
+  border: none;
+  display: flex;
+}
+
+.toMainPage{
+  border: none;
+  background-color: transparent;
+  color: var(--blue-color);
+}
+.modaleCommentContainerBack{
+  transition-duration: 0.2s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modaleCommentContainer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--filters-color);
+  padding: 20px 100px 40px 100px;
+  border-radius: var(--middle-radius);
+}
+.modalTitle{
+  text-align: center;
+  font-size: 42px;
+}
+
+.modalinputsContainer{
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+
+
+.modalinputsContainer label{
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+
+.modalinputsContainer label input:not(:last-child){
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.modalinputsContainer label:last-child{
+  flex-direction: column;
+  align-items: start;
+  row-gap: 8px;
+}
+.modalinputsContainer label input:last-child{
+  width: 100%;
+  border: 1px solid black;
+  border-radius: var(--little-radius);
+  padding: 8px 16px;
+}
+.otherCategories{
+  font-weight: bold;
+}
+.sendRejectButton{
+  margin-top: 24px;
+  background-color: var(--red-color);
+  border: none;
+  padding: 16px 32px;
+  border-radius: var(--middle-radius);
+  width: 100%;
+  color: white;
+}
+.sendRejectButton:hover{
+  transition-duration: 0.3s;
+  background-color: #fa4c72;
+}
+.sendRejectButton:active{
+  transition-duration: 0.3s;
+  background-color: #c42f4f;
+}
+.closeButton{
+  position: absolute;
+  top: -40px;
+  right: -10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.closeButton:hover{
+  color: #ddd;
+}
+
+.sendfinalizeButton{
+  margin-top: 24px;
+  border: none;
+  padding: 16px 32px;
+  border-radius: var(--middle-radius);
+  width: 100%;
+  color: white;
+  background-color: var(--blue-color);
+}

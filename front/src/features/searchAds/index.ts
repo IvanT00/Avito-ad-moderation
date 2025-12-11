@@ -1,0 +1,1 @@
+export {default as SearchAds} from './ui/SearchAds.tsx'

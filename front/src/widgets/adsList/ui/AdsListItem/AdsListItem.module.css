@@ -1,0 +1,55 @@
+.ad {
+  display: flex;
+  width: 100%;
+  border: none;
+  border-radius: var(--larger-radius);
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ad:hover {
+  animation-duration: var(--animation-duration);
+  background-color: var(--list-item-hover-color);
+}
+
+.containerImgInfo {
+  display: flex;
+}
+
+.imgCarouselContainer {
+  padding: 16px;
+}
+
+.adTitle {
+  margin-top: 8px;
+}
+
+.adPrice {
+  font-weight: bold;
+}
+
+.adDateAdd {
+  padding-left: 40px;
+  position: relative;
+}
+
+.adDateAdd::before {
+  content: url("@/app/assets/icons/dote.svg");
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.adPriorityContainer {
+  padding-right: 32px;
+}
+
+.adPriority {
+  font-size: var(--status-size);
+  color: var(--red-color);
+}
+
+/*# sourceMappingURL=AdsListItem.module.css.map */

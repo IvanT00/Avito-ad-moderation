@@ -1,0 +1,14 @@
+.menuCategoriesItem{
+  cursor: pointer;
+  font-size: var(--placeholder-size);
+  padding: 8px 16px;
+  border-radius: var(--middle-radius);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.menuCategoriesItem:hover{
+  transition-duration: 0.2s;
+  background-color: var(--filters-color);
+
+}

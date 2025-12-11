@@ -1,0 +1,1 @@
+export { default as AdsList } from './adsList/ui/AdsList/AdsList';

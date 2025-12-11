@@ -1,0 +1,14 @@
+body{
+  font-family: var(--main-font), sans-serif;
+  font-size: var(--p-size);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.container{
+  max-width: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin: 0 auto;
+}

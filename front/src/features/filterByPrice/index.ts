@@ -1,0 +1,1 @@
+export {default as FilterByPrice} from './ui/FilterByPrice.tsx'

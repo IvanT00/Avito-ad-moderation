@@ -1,0 +1,40 @@
+.rangePricesSideFilterTitle{
+  font-weight: 600;
+  font-size: var(--h2-size);
+  user-select: none;
+}
+.rangePricesSideFilterFrom{
+  background-color: var(--filters-color);
+  border: none;
+  border-radius: var(--middle-radius);
+  padding: 12px;
+  width: 150px;
+}
+.rangePricesSideFilterTo{
+  background-color: var(--filters-color);
+  border: none;
+  border-radius: var(--middle-radius);
+  padding: 12px;
+  width: 150px;
+}
+.prices{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  margin-top: 8px;
+}
+.rangePricesSideFilterContainer{
+  margin-top: 16px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Для Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

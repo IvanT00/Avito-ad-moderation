@@ -1,0 +1,23 @@
+.searchInput {
+  height: 61px;
+  border: 3px solid var(--blue-color);
+  border-radius: var(--middle-radius);
+  padding: 16px;
+  min-width: 400px;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputContainer::after {
+  content: url("@/app/assets/icons/magnifier.svg");
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=SearchAds.module.css.map */

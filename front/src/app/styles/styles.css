@@ -1,0 +1,213 @@
+@import 'normalize.css';
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+:where(h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+:where(ul[class]) {
+  list-style: none;
+}
+
+:where(address[class]) {
+  font-style: normal;
+}
+
+p {
+  --paragraphMarginBottom: 24px;
+  margin-block: 0;
+}
+
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  height: 100%;
+  scrollbar-gutter: stable;
+}
+
+html,
+:has(:target) {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+a:where([class]) {
+  display: inline-flex;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+:where([fill]:not([fill=none],
+[fill^=url])) {
+  fill: currentColor;
+}
+
+:where([stroke]:not([stroke=none],
+[stroke^=url])) {
+  stroke: currentColor;
+}
+
+svg * {
+  transition-property: fill, stroke;
+}
+
+:where(table) {
+  border-collapse: collapse;
+  border-color: currentColor;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+li {
+  list-style: none;
+}
+
+:root {
+  --blue-color: #00AAFF;
+  --text-color: #0F0400;
+  --green-color: #02D15C;
+  --red-color: #F2456A;
+  --alternate-text-color: #FFFFFF;
+  --placeholder-color: #75777D;
+  --filters-color: #F2F1F0;
+  --main-font: "Manrope", sans-serif;
+  --little-radius: 8px;
+  --middle-radius: 16px;
+  --larger-radius: 18px;
+  --background-color: #FFFFFF;
+  --h1-size: 64px;
+  --h2-size: 32px;
+  --status-size: 36px;
+  --p-size: 24px;
+  --placeholder-size: 20px;
+  --list-item-hover-color: #F5F5F5;
+  --animation-duration: 0.2s;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--main-font), sans-serif;
+  font-size: var(--p-size);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("@/app/assets/fonts/Manrope-Regular.woff2") format("WOFF2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("@/app/assets/fonts/Manrope-SemiBold.woff2") format("WOFF2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("@/app/assets/fonts/Manrope-Bold.woff2") format("WOFF2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+h1 {
+  font-size: var(--h1-size);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: 400;
+}
+
+p {
+  font-size: var(--p-size);
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=styles.css.map */
