@@ -221,6 +221,7 @@ const AddPage = () => {
                 <div className={module.arrowsContainer}>
                     <button className={module.arrowLeft} onClick={handleClickPrev}>
                         <img src={arrow} alt="Предыдущее"/>
+
                     </button>
                     <button className={module.toMainPage} onClick={() => navigate('/')}>На главную</button>
                     <button className={module.arrowRight} onClick={handleClickNext}>
